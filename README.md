@@ -4,7 +4,7 @@
 		- You can easily use TFLM in your project by adding this repository as git-submodule
 	- sample project (hello world project) to use the TFLM library
 
-- The TFLM library doesn't have platform-specific hardware optimizations. So the library should run on any platform
+- The TFLM library in this repo doesn't have platform-specific hardware optimizations. So the library should run on any platform
 	- I made this repository mainly for development on PC (Windows and Linux on x64)
 	- When you use a specific hardware like Arduino, it' better to create a new library for the device to get better performance
 
