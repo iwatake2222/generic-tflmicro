@@ -60,7 +60,11 @@ struct AllocationInfo {
 // requirement for SIMD extensions.
 constexpr int kBufferAlignment = 16;
 constexpr char kOfflineMemAllocMetadata[] = "OfflineMemoryAllocation";
+#ifdef WIN32
+const TfLiteIntArray kZeroLengthIntArray;
+#else
 const TfLiteIntArray kZeroLengthIntArray = {};
+#endif
 
 class MicroBuiltinDataAllocator : public BuiltinDataAllocator {
  public:
