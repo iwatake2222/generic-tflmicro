@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 set(LibName "generic-tflmicro")
-add_library(${LibName} "${SRC}")
+add_library(${LibName} "")
 
 target_include_directories(${LibName}
   PUBLIC
